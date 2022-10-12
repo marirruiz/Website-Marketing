@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* Formatação cabeçalho */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 48%;
+    padding-right: 8%;
+}
+
+.hero img {
+    height: auto;
+    width: 100px;
+}
+
+nav ul li a:hover {
+    color: #09a8ff;
+    transition: .4s;
+}
+
+.btn {
+    background-color: #09a8ff;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #09a8ff;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.15s;
+    transition-delay: 0s;
+} 
+
+.container a:hover {
+    transition-delay: 0.5s;
+    color: #0002;
+    box-shadow: 0 0 10px #09a8ff,
+                0 0 20px #09a8ff,
+                0 0 40px #09a8ff,
+                0 0 80px #09a8ff,
+                0 0 160px #09a8ff;
+}
+
+.container a span {
+    position: relative;
+    z-index: 100;
+    color: #fff;
+}
+
+.container a:nth-child(2) {
+    filter: hue-rotate(80deg);
+}
+
+.container a::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #09a8ff;
+    box-shadow: 5px -8px 0 #09a8ff,
+                5px 8px 0 #09a8ff;
+    transition: width 0.10s, left 0.10s, height 0.10s,
+    box-shadow 0.10s;
+    transition-delay: 0.3s, 0.16s, 0s, 0s;
+}
+
+.container a:hover::before {
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #09a8ff,
+                5px 0 0 #09a8ff;
+    transition-delay: 0s, 0.16s, 0.3s, 0.3s;
+}
+
+.container a::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #09a8ff;
+    box-shadow: -5px -8px 0 #09a8ff,
+                -5px 8px 0 #09a8ff;
+    transition: width 0.10s, left 0.10s, height 0.10s,
+    box-shadow 0.10s;
+    transition-delay: 0.3s, 0.16s, 0s, 0s;
+}
+
+.container a:hover::after {
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #09a8ff,
+                -5px 0 0 #09a8ff;
+    transition-delay: 0s, 0.16s, 0.3s, 0.3s;
+}
+
+/* Formatação inscrição */
+.text-box {
+    color: #fff;
+    position: relative;
+    bottom: 8%;
+}
+
+.text-box h1 {
+    font-size: 60px;
+    line-height: 160px;
+    margin-top: 15%;
+    margin-left: 34%;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../assets/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 10s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 24%;
+}
+
+
+/* Formatação conteudo */
+.sobre {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.sobre img {
+    height: auto;
+    width: 430px;
+}
+
+.sobre-texto {
+    width: 550px;
+}
+
+.principal {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre-texto h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.sobre-texto h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.sobre-texto p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.serviço {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.titulo h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.cartão {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cartão i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.cartão .button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.cartão .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* Formatação contate-me */
+.contate-me {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contate-me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contate-me .button-dois {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.contate-me .button-dois:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* Formatação rodape */
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.fim {
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
+
+
