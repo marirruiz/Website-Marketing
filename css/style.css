@@ -98,8 +98,9 @@ nav ul li a:hover {
 /* Formatação sobre */
 .sobre {
     width: 100%;
-    padding: 150px 100px;
+    padding: 100px 100px;
     background: #fff;
+    position: relative;
 }
 
 
@@ -112,6 +113,7 @@ nav ul li a:hover {
     color: #000;
     font-size: 30px;
     padding-bottom: 5%;
+    display: flex;
 }
 
 .sobre-texto p {
@@ -127,7 +129,7 @@ nav ul li a:hover {
 
 .sobre img {
     width: 500px;
-    padding: 0px 50px;
+    padding: 0px 20px;
 }
 
 .btn {
@@ -150,12 +152,26 @@ nav ul li a:hover {
     transition: all 0.3s ease;
     width: 150px;
 }
+
+.monit h2 {
+    width: 100%;
+    font-size: 30px;
+    padding: 70px 90px;
+    position: relative;
+}
+
+.monit img {
+    width: 100%;
+    padding: 0px 95px;
+    position: relative;
+}
 /* Formatação serviços */
 .serviço {
     background: -webkit-linear-gradient(left, #ffffff, #eee9e2);
     background: linear-gradient(to right, #ffffff, #e0ddd7);
     width: 100%;
     padding: 100px 0px;
+    position: relative;
 }
 
 .titulo h2 {
@@ -193,6 +209,7 @@ nav ul li a:hover {
 .cartão1 img {
     width: 260px;
     margin-top: -15px;
+    position: relative;
 }
 
 .cartão1 img:hover {
@@ -317,6 +334,61 @@ footer p:nth-child(2) {
     transform: scale(1.3);
     transition: .3s;
 }
+
+.projetos img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.fotos1 {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 200px 200px;
+    padding-top: 0px;
+}
+
+.sobre-texto1 h2 {
+    width: 100%;
+    padding: 60px 200px 10px;
+    background: #fff;
+    position: relative;
+}
+
+.sobre-texto1 p {
+    width: 100%;
+    padding: 10px 200px;
+    background: #fff;
+    position: relative;
+}
+
+.qr img {
+    width: 26%;
+    padding: 10px 200px 20px;
+    background: #fff;
+    position: relative;
+}
+
+.sobre-texto2 p {
+    width: 100%;
+    padding: 10px 200px 20px;
+    background: #fff;
+    position: relative;
+}
+
+.descricao p {
+    width: 100%;
+    padding: 10px 200px;
+    position: relative;
+}
+
+.descricao img {
+    width: 20%;
+    padding-top: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 
